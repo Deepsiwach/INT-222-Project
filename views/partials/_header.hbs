@@ -1,0 +1,26 @@
+<nav class="grey darken-3">
+    <div class="nav-wrapper container">
+
+        <a href="#!" class="brand-logo center">StoryBooks</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="fas fa-bars"></i></a>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="/stories" onclick="alertredirectpublic()">Public Stories</a></li>
+            <li><a href="/dashboard" onclick="alertredashboard()">Dashboard</a></li>
+            <li><a href="/auth/logout" onclick="alertredlogout()">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+<script>
+    function alertredirectpublic(){
+        alert('You will be redirected to public story page where only public stories from different author will be visible')
+    } 
+
+     function alertredashboard(){
+        alert('You will be redirected to Dashboard page where only stories written by you will be visible')
+    } 
+
+     function alertredlogout(){
+        alert('You will be logged out of the session. Is it Okay')
+        
+    } 
+</script>
